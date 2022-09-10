@@ -224,7 +224,7 @@ describe('Central de Atendimento ao Cliente TAT', () => {
           .should('not.be.visible')
       })
 
-      it.only('preenche a area de texto usando o comando invoke', () => {
+      it('preenche a area de texto usando o comando invoke', () => {
 
         const longtext = Cypress._.repeat('dsajkdksajdsa', 30)
 
@@ -247,7 +247,7 @@ describe('Central de Atendimento ao Cliente TAT', () => {
         })
      })
 
-     it.only('encontre o gato', () => {
+     it('encontre o gato', () => {
         cy.get('#cat')
         .should('not.be.visible')
         .invoke('show')
